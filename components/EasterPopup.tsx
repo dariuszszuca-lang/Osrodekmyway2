@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import wielkanocImg from '../wielkanoc-droga.png';
 
 const EasterPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -28,7 +29,7 @@ const EasterPopup: React.FC = () => {
         {/* HERO IMAGE */}
         <div className="relative overflow-hidden" style={{ height: '280px' }}>
           <img
-            src="/wielkanoc-droga.png"
+            src={wielkanocImg}
             alt="Droga ku nadziei — Wielkanoc MyWay"
             className="w-full h-full object-cover"
             style={{ objectPosition: 'center 30%' }}
