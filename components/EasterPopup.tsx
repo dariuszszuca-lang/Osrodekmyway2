@@ -41,11 +41,11 @@ const EasterPopup: React.FC = () => {
           {/* Fundacja + 50% — góra */}
           <div className="absolute top-4 left-0 right-0 text-center z-10 px-4">
             <div className="inline-block rounded-2xl px-6 py-4" style={{ background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(8px)', animation: 'badgePulse 3s ease-in-out infinite', boxShadow: '0 8px 32px rgba(192,57,43,0.2), 0 2px 8px rgba(0,0,0,0.08)' }}>
-              <p style={{ fontFamily: "'Georgia', serif", fontSize: '14px', color: '#0D4F4F', lineHeight: '1.4' }}>
+              <p style={{ fontFamily: "'Georgia', serif", fontSize: '17px', fontWeight: '700', color: '#0D4F4F', lineHeight: '1.4' }}>
                 Dzięki wsparciu <strong>Fundacji MyWay</strong>
               </p>
               <p className="font-extrabold leading-none my-1" style={{ fontFamily: "'Georgia', serif", fontSize: '42px', color: '#c0392b' }}>−50%</p>
-              <p style={{ fontFamily: "'Georgia', serif", fontSize: '13px', color: '#888' }}>obniżamy cenę na start · dla 5 osób</p>
+              <p style={{ fontFamily: "'Georgia', serif", fontSize: '15px', fontWeight: '600', color: '#555' }}>obniżamy cenę na start</p>
             </div>
           </div>
 
@@ -76,7 +76,6 @@ const EasterPopup: React.FC = () => {
             Zadzwoń — 731 395 295
           </a>
 
-          <p className="mt-3 font-bold text-sm" style={{ color: '#c0392b' }}>Zostało 5 miejsc</p>
         </div>
       </div>
 
