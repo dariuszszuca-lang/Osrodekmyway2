@@ -38,14 +38,14 @@ const EasterPopup: React.FC = () => {
             background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(255,253,248,0.4) 65%, rgba(255,253,248,0.85) 85%, #fffdf8 100%)'
           }} />
 
-          {/* Fundacja + 50% — góra, czytelne */}
+          {/* Fundacja + 50% — góra */}
           <div className="absolute top-4 left-0 right-0 text-center z-10 px-4">
-            <div className="inline-block rounded-2xl px-6 py-4 shadow-xl" style={{ background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(8px)' }}>
+            <div className="inline-block rounded-2xl px-6 py-4" style={{ background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(8px)', animation: 'badgePulse 3s ease-in-out infinite', boxShadow: '0 8px 32px rgba(192,57,43,0.2), 0 2px 8px rgba(0,0,0,0.08)' }}>
               <p style={{ fontFamily: "'Georgia', serif", fontSize: '14px', color: '#0D4F4F', lineHeight: '1.4' }}>
                 Dzięki wsparciu <strong>Fundacji MyWay</strong>
               </p>
               <p className="font-extrabold leading-none my-1" style={{ fontFamily: "'Georgia', serif", fontSize: '42px', color: '#c0392b' }}>−50%</p>
-              <p style={{ fontFamily: "'Georgia', serif", fontSize: '13px', color: '#888' }}>na start leczenia · dla 5 osób</p>
+              <p style={{ fontFamily: "'Georgia', serif", fontSize: '13px', color: '#888' }}>obniżamy cenę na start · dla 5 osób</p>
             </div>
           </div>
 
@@ -84,6 +84,10 @@ const EasterPopup: React.FC = () => {
         @keyframes popupIn {
           from { opacity: 0; transform: scale(0.95) translateY(20px); }
           to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        @keyframes badgePulse {
+          0%, 100% { box-shadow: 0 8px 32px rgba(192,57,43,0.2), 0 2px 8px rgba(0,0,0,0.08); transform: scale(1); }
+          50% { box-shadow: 0 12px 44px rgba(192,57,43,0.35), 0 4px 12px rgba(0,0,0,0.1); transform: scale(1.02); }
         }
       `}</style>
     </div>
