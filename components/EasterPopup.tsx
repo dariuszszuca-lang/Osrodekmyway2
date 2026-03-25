@@ -45,7 +45,7 @@ const EasterPopup: React.FC = () => {
                 Dzięki wsparciu <strong>Fundacji MyWay</strong>
               </p>
               <p className="font-extrabold leading-none my-1" style={{ fontFamily: "'Georgia', serif", fontSize: '42px', color: '#c0392b' }}>−50%</p>
-              <p style={{ fontFamily: "'Georgia', serif", fontSize: '15px', fontWeight: '600', color: '#555' }}>obniżamy cenę na start</p>
+              <p style={{ fontFamily: "'Georgia', serif", fontSize: '15px', fontWeight: '600', color: '#555' }}>obniżamy cenę na start dla 5 osób</p>
             </div>
           </div>
 
