@@ -38,10 +38,13 @@ const EasterPopup: React.FC = () => {
             background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(255,253,248,0.4) 65%, rgba(255,253,248,0.85) 85%, #fffdf8 100%)'
           }} />
 
-          <div className="absolute top-4 left-0 right-0 text-center z-10">
-            <span className="text-xs font-bold tracking-widest uppercase" style={{ color: '#9a7a3a', letterSpacing: '4px' }}>
-              Wielkanoc 2026
-            </span>
+          {/* Fundacja MyWay — góra, duże, widoczne */}
+          <div className="absolute top-4 left-0 right-0 text-center z-10 px-4">
+            <div className="inline-block rounded-2xl px-5 py-3 shadow-lg" style={{ background: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(8px)', border: '1px solid rgba(13,79,79,0.15)' }}>
+              <p className="font-bold uppercase mb-1" style={{ fontSize: '11px', letterSpacing: '2px', color: '#0D4F4F' }}>Dzięki wsparciu Fundacji MyWay</p>
+              <p className="font-bold" style={{ fontFamily: "'Georgia', serif", fontSize: '22px', color: '#c0392b' }}>Obniżamy ceny o 50%</p>
+              <p className="font-bold mt-0.5" style={{ fontSize: '12px', color: '#888' }}>dla 5 osób</p>
+            </div>
           </div>
 
           <div className="absolute bottom-4 left-0 right-0 text-center z-10 px-6">
@@ -53,22 +56,12 @@ const EasterPopup: React.FC = () => {
 
         {/* BODY */}
         <div className="text-center" style={{ background: '#fffdf8', padding: '16px 28px 28px' }}>
-          <div className="inline-flex items-center justify-center mb-4" style={{
-            padding: '10px 28px',
-            borderRadius: '12px',
-            border: '3px solid #c0392b',
-            background: 'linear-gradient(135deg, #fdeaea, #fff5f5)',
-            boxShadow: '0 4px 20px rgba(192,57,43,0.15)'
-          }}>
-            <span style={{ fontFamily: "'Georgia', serif", fontSize: '30px', fontWeight: 'bold', color: '#c0392b' }}>−50%</span>
-          </div>
-
           <h3 className="mb-2 leading-snug" style={{ fontFamily: "'Georgia', serif", fontSize: '20px', fontWeight: 'bold', color: '#1a1a2e' }}>
             Nowy początek jest bliżej<br />niż myślisz.
           </h3>
 
           <p className="text-sm mb-5 leading-relaxed" style={{ color: '#666' }}>
-            Wielkanoc to czas zmian. Dlatego dajemy 50% zniżki na start leczenia w&nbsp;Ośrodku MyWay.
+            Wielkanoc to czas zmian. Dzięki Fundacji MyWay obniżamy ceny o&nbsp;połowę dla&nbsp;5&nbsp;osób.
             <br /><br />
             Zadzwoń, porozmawiamy. Bez zobowiązań.
           </p>
@@ -81,11 +74,7 @@ const EasterPopup: React.FC = () => {
             Zadzwoń — 731 395 295
           </a>
 
-          <p className="mt-3 font-bold text-sm" style={{ color: '#c0392b' }}>Tylko 10 miejsc — zostało 7</p>
-
-          <div className="mt-4 pt-3 text-xs font-semibold" style={{ borderTop: '1px solid #e8e4da', color: '#0D4F4F' }}>
-            🕊 Pod patronatem <strong>Fundacji MyWay</strong>
-          </div>
+          <p className="mt-3 font-bold text-sm" style={{ color: '#c0392b' }}>Zostało 5 miejsc</p>
         </div>
       </div>
 
