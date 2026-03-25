@@ -38,17 +38,17 @@ const EasterPopup: React.FC = () => {
             background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(255,253,248,0.4) 65%, rgba(255,253,248,0.85) 85%, #fffdf8 100%)'
           }} />
 
-          {/* Fundacja MyWay — góra, duże, widoczne */}
+          {/* Fundacja + 50% — góra, czytelne */}
           <div className="absolute top-4 left-0 right-0 text-center z-10 px-4">
-            <div className="inline-block rounded-2xl px-5 py-3 shadow-lg" style={{ background: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(8px)', border: '1px solid rgba(13,79,79,0.15)' }}>
-              <p className="font-bold uppercase mb-1" style={{ fontSize: '11px', letterSpacing: '2px', color: '#0D4F4F' }}>Dzięki wsparciu Fundacji MyWay</p>
-              <p className="font-bold" style={{ fontFamily: "'Georgia', serif", fontSize: '22px', color: '#c0392b' }}>Obniżamy ceny o 50%</p>
-              <p className="font-bold mt-0.5" style={{ fontSize: '12px', color: '#888' }}>dla 5 osób</p>
+            <div className="inline-block rounded-2xl px-6 py-4 shadow-xl" style={{ background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(8px)' }}>
+              <p className="font-semibold" style={{ fontSize: '13px', color: '#0D4F4F', letterSpacing: '0.5px' }}>Fundacja MyWay</p>
+              <p className="font-extrabold leading-none my-1" style={{ fontSize: '42px', color: '#c0392b' }}>−50%</p>
+              <p className="font-semibold" style={{ fontSize: '13px', color: '#888' }}>na start leczenia · dla 5 osób</p>
             </div>
           </div>
 
           <div className="absolute bottom-4 left-0 right-0 text-center z-10 px-6">
-            <h2 className="leading-tight" style={{ fontFamily: "'Georgia', serif", fontSize: '32px', color: '#2a2520' }}>
+            <h2 className="leading-tight" style={{ fontFamily: "'Georgia', serif", fontSize: '30px', color: '#2a2520' }}>
               Wielkanoc = <em style={{ color: '#0D4F4F', fontStyle: 'italic' }}>Wielka Zmiana</em>
             </h2>
           </div>
