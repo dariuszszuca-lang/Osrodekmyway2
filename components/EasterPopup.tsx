@@ -41,9 +41,11 @@ const EasterPopup: React.FC = () => {
           {/* Fundacja + 50% — góra, czytelne */}
           <div className="absolute top-4 left-0 right-0 text-center z-10 px-4">
             <div className="inline-block rounded-2xl px-6 py-4 shadow-xl" style={{ background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(8px)' }}>
-              <p className="font-semibold" style={{ fontSize: '13px', color: '#0D4F4F', letterSpacing: '0.5px' }}>Fundacja MyWay</p>
-              <p className="font-extrabold leading-none my-1" style={{ fontSize: '42px', color: '#c0392b' }}>−50%</p>
-              <p className="font-semibold" style={{ fontSize: '13px', color: '#888' }}>na start leczenia · dla 5 osób</p>
+              <p style={{ fontFamily: "'Georgia', serif", fontSize: '14px', color: '#0D4F4F', lineHeight: '1.4' }}>
+                Dzięki wsparciu <strong>Fundacji MyWay</strong>
+              </p>
+              <p className="font-extrabold leading-none my-1" style={{ fontFamily: "'Georgia', serif", fontSize: '42px', color: '#c0392b' }}>−50%</p>
+              <p style={{ fontFamily: "'Georgia', serif", fontSize: '13px', color: '#888' }}>na start leczenia · dla 5 osób</p>
             </div>
           </div>
 
