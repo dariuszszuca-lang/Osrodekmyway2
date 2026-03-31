@@ -1,5 +1,5 @@
 import React from 'react';
-import EasterPopup from './components/EasterPopup';
+// import EasterPopup from './components/EasterPopup';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -13,7 +13,7 @@ import FAQ from './components/FAQ';
 const App: React.FC = () => {
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-      <EasterPopup />
+      {/* <EasterPopup /> */}
       <div className="layout-container flex h-full grow flex-col">
         <div className="flex flex-1 justify-center py-5">
           <div className="layout-content-container flex flex-col w-full max-w-6xl flex-1 px-4 md:px-10">
